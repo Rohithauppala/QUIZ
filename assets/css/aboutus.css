@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-style: 'Poppins', sans-serif;
+}
+body{
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #f3f5f9;
+}
+.about{
+	background: url(../img/aboutus.svg) no-repeat left;
+	background-size: 55%;
+	background-color: #f3f5f9;
+	overflow: hidden;
+	padding: 100px 0;
+}
+.us{
+	width: 55%;
+	float: right;
+	background-color: #fff;
+	padding: 100px;
+	box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);
+}
+.us h1{
+	margin-bottom: 20px;
+	font-size: 30px;
+	font-weight: 900;
+}
+.text{
+	font-size: 15px;
+	line-height: 20px;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+.contact button{
+	font-size: 22px;
+	letter-spacing: 2px;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+	padding: 8px;
+	width: 200px;
+	background-color:#03a9f4 ;
+	color: #fff;
+	cursor: pointer;
+}
+.contact button:hover{
+	background-color:#f3f5f9;
+	color: #03a9f4;
+}
+
+@media(max-width: 768px){
+.about{
+	background-color: #f3f5f9;
+	background: none;
+}
+.us{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(255, 255, 255, 0.9);
+	box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.1);
+}
+.us h1{
+	font-size: 25px;
+	font-weight: 900;
+}
+.text{
+	font-size: 13px;
+	line-height: 15px;
+	text-align: justify;
+	margin-bottom: 8px;
+}
+.contact button{
+	font-size: 12px;
+	letter-spacing: 2px;
+	text-align: center;
+	border: none;
+	border-radius: 20px;
+	padding: 8px;
+	width: 100px;
+	background-color:#03a9f4 ;
+	color: #fff;
+	cursor: pointer;
+}
+
+}

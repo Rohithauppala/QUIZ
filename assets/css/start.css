@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+}
+
+.container{
+  background: #fff;
+  width: 50%;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #607d8b;
+}
+.container .text ul{
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+.container .text ul li{
+  padding-bottom: 20px;
+}
+.container .text h3{
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #e91e63;
+}
+.container .label{
+  text-align: center;
+  color: #607d8b;
+}
+
+.container .input input{
+  padding: 10px 20px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #607d8b;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #607d8b;
+  background: transparent;
+  border-radius: 30px;
+  margin-top: 10px;
+  margin-left: 35%;
+}
+
+.container .input input[type="submit"]{
+  background: #ff4584;
+  color: #fff;
+  outline: none;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+.container .input input[type="submit"]:hover{
+  background: #f53677;
+}
+
+@media(max-width: 650px){
+  .container{
+  background: #fff;
+  width: 70%;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #607d8b;
+  vertical-align: middle;
+  align-items: center;
+}
+}

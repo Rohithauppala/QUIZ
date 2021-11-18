@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+   background-color: #f3f5f9;
+}
+
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #e91e63;
+  /*background: #4b4276#03a9f4*/;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h2{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+  border-bottom: 1px solid #bdb8d7;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-top: 1px solid rgba(255,255,255,0.05);
+}    
+
+.wrapper .sidebar ul li a{
+  /*color: #bdb8d7;*/
+  color: #fff;
+  display: block;
+}
+
+.wrapper .sidebar ul li a .fas{
+  width: 25px;
+}
+.wrapper .sidebar .logout{
+  display: none;
+}
+.wrapper .sidebar ul li:hover{
+  /*background-color: #594f8d;*/
+  background-color: #fff;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #e91e63;
+}
+ 
+
+.wrapper .sidebar .social_media{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.wrapper .sidebar .social_media a{
+  display: block;
+  width: 40px;
+  /*background: #594f8d;*/
+  height: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0px;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 200px;
+}
+
+.wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #e91e63;
+  border-bottom: 1px solid #e0e4e8;
+}
+
+.wrapper .main_content .header1{
+  padding: 20px;
+  background: #fff;
+  color: #e91e63;
+  border-bottom: 1px solid #e0e4e8;
+  display: none;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+
+.tab{
+  padding: 0 10%;
+  margin: 40px auto 0;
+}
+.head{
+  font-size: 40px;
+  text-align: center;
+  color: #e91e63;
+  margin-bottom: 40px;
+}
+.tab{
+  width: 80%;
+  border-collapse: collapse;
+}
+.tab thead{
+  background-color: #e91e63;
+}
+.tab thead tr th{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  opacity: 1;
+  color: #FFF;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid #f3f5f9;
+}
+.tab tbody tr td{
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  background-color: #fff;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #f3f5f9;
+}
+.tab .status{
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: bold;
+  color: #e91e63;
+}
+.tab tbody tr td .btn{
+  width: 130px;
+  text-decoration: none;
+  line-height: 35px;
+  display: inline-block;
+  background-color: #e91e63;
+  color: #fff;
+  font-weight: medium;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  font-size: 14px;
+  opacity: 1;
+}
+@media(max-width: 768px){
+  .tab thead{
+    display: none;
+  }
+  .tab, .tab tbody, .tab tr, .tab td{
+    display: block;
+    width: 100%;
+  }
+  .tab tr{
+    margin-bottom: 15px;
+  }
+  .tab tbody tr td{
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+  .tab td:before{
+    content: attr(data);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 600;
+    font-weight: 14px;
+    text-align: left;
+  }
+  .tab tbody tr td .btn{
+    left: 0;
+    width: 80%;
+    text-align: center;
+  }
+  .sidebar ul li b{
+    display: none;
+  }
+  .sidebar h2{
+    display: none;
+  }
+  .sidebar .social_media a .log{
+    display: none;
+  }
+  .wrapper .sidebar{
+  background: #e91e63;
+  /*background: #4b4276#03a9f4*/;
+  height: 100%;
+  width: 10%;
+}
+.wrapper .main_content{
+  width: 100%;
+  margin-left: 40px;
+}
+  .wrapper .main_content .header{
+  padding: 20px;
+  background: #fff;
+  color: #e91e63;
+  border-bottom: 1px solid #e0e4e8;
+  float: right;
+  
+}
+
+.wrapper .main_content .header1{
+  padding: 20px;
+  background: #fff;
+  color: #e91e63;
+  border-bottom: 1px solid #e0e4e8;
+  display: block;
+}
+.wrapper .sidebar .logout{
+  display: block;
+}
+}
+
